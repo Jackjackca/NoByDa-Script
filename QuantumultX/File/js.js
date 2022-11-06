@@ -1,4 +1,4 @@
-MITM = 192.168.2.233:3000
+MITM = 192.168.2.233
 
 const path = "/data"
 let obj = JSON.parse($response.body)
