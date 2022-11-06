@@ -1,5 +1,5 @@
-const path = "/data"
-let obj = JSON.parse($response.body)
-obj.name = 777
-console.log(obj)
-$done({body: JSON.stringify(obj)})
+var body = $response.body;
+var obj = JSON.parse(body);
+obj['name'] = 777;
+body = JSON.stringify(obj);
+$done(body);
